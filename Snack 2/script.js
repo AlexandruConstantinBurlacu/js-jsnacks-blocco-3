@@ -6,4 +6,16 @@
 const primoArray = ['a', 'b', 'c', 'd', 'e', 'f'];
 const secondoArray = [1, 2, 3, 4, 5, 6];
 
+function fusionArray() {
+    const risultatoArray = [];
 
+    for(let i = 0; i < primoArray.length; i++) {
+        risultatoArray.push(primoArray[i]);
+        risultatoArray.push(secondoArray[i]);
+    }
+    return risultatoArray;
+
+}
+
+const arrayCombinato = fusionArray(primoArray, secondoArray);
+console.log(arrayCombinato);
